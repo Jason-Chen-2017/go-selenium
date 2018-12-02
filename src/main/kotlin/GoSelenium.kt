@@ -33,7 +33,7 @@ fun main(args: Array<String>) {
     driver.quit()
 }
 
-private fun initDriver(): ChromeDriver {
+fun initDriver(): ChromeDriver {
     System.setProperty("webdriver.chrome.driver", "chromedriver")// 设置 webdriver 路径到系统环境变量中
     val capabilities = DesiredCapabilities.chrome()
     // SSL Certificate
