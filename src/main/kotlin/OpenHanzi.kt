@@ -1,10 +1,18 @@
+
+
+
+
+
+
+
+
 fun main(args: Array<String>) {
     val driver = initDriver()
-    // 笃初诚美，慎终宜令
-    val wenZi = "荣业所基，籍甚无竟"
-    val wenZiNew = wenZi.replace("，", "")
+    var wenZi = "人之初，性本善。性相近，习相远"
+    wenZi = wenZi.replace("，", "")
+    wenZi = wenZi.replace("。", "")
 
-    wenZiNew.forEach {
+    wenZi.forEach {
         driver.executeScript("window.open('http://hanziyuan.net/#$it')", "")
     }
 
